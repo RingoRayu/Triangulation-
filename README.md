@@ -9,3 +9,6 @@
 3. 辺から画像を作る        (Execute2())        リカコシ
 4. 実行方法考える                              みず吉
 
+## 実行
+echo `pkg-config --cflags opencv`
+g++ -std=c++11 main.cpp -o main.out `pkg-config --cflags opencv` `pkg-config --libs opencv` && ./main.out
